@@ -1,0 +1,23 @@
+# Git & IDEs
+.git
+.idea
+.vscode
+*.iml
+
+# Build & Compilation Targets
+**/target/
+**/build/
+.build-cache/
+
+# Local Database & Runtime Data
+**/data/
+*.mv.db
+*.trace.db
+
+# Agent Artifacts & Scratch
+.artifacts/
+
+# Logs, Temp, and Environment Files
+*.log
+.env
+.env.*
