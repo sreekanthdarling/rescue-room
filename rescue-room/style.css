@@ -3,3 +3,4 @@
 
 [data-state=FAILED] .result>*{animation:reveal-result 2.3s both}@keyframes reveal-result{0%,75%{opacity:0}100%{opacity:1}}
 .inspection-timer{position:absolute;top:3%;left:0;width:100%;text-align:center;font:500 4cqw monospace;letter-spacing:.08em;color:#e3d3a3}.urgent .inspection-timer{color:#ff8c69;animation:pulse .6s infinite alternate}
+.winner-rewards-prompt{margin-bottom:2cqw;text-align:left;background:#101a18;border:1px solid #637b5c40;padding:2cqw 2.5cqw;border-radius:4px}.winner-rewards-title{font-family:'Barlow Condensed',sans-serif;font-size:2.2cqw;font-weight:600;letter-spacing:.12em;color:#e7dbbb;margin-bottom:.8cqw}.winner-rewards-desc{font-size:2.1cqw;line-height:1.5;color:#9cad9e;margin:0}
