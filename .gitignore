@@ -1,0 +1,26 @@
+# IDE & OS Files
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+*~
+*.swp
+
+# Build & Compilation Targets
+**/target/
+**/build/
+.build-cache/
+
+# Local H2 Database & Runtime Data
+**/data/
+*.mv.db
+*.trace.db
+
+# Agent Artifacts & Scratch
+.artifacts/
+
+# Logs, Temp, and Environment Files
+*.log
+.env
+.env.*

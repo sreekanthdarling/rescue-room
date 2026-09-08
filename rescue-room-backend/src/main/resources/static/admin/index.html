@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><title>Rescue Room | Admin</title><link rel="stylesheet" href="/admin/admin.css"><script src="/admin/admin.js" defer></script></head>
+<body><header class="topbar"><a class="brand" href="/admin"><span class="brand-mark" aria-hidden="true">R</span>RESCUE <b>ROOM</b><span class="admin-label">ADMIN</span></a><span class="environment"><i></i> LOCAL INSTANCE</span></header>
+<main><div class="page-heading"><div><p class="eyebrow">OPERATIONS / SESSIONS</p><h1>Session overview</h1><p class="subtitle">A live view of every rescue attempt.</p></div><div class="refresh-area"><span id="refresh-state" role="status">Connecting…</span><button id="refresh" class="secondary">↻ &nbsp;Refresh</button></div></div>
+<section class="stats" aria-label="Session statistics">
+<article class="stat total"><span>TOTAL PLAYERS</span><strong id="total">—</strong><small>All recorded sessions</small></article>
+<article class="stat playing"><span><i></i> PLAYING NOW</span><strong id="playing">—</strong><small id="threshold">Recent active sessions</small></article>
+<article class="stat winners"><span><i></i> WINNERS</span><strong id="winners">—</strong><small>Successful rescues</small></article>
+<article class="stat losers"><span><i></i> LOSERS</span><strong id="losers">—</strong><small>Finished without rescue</small></article>
+<article class="stat emails"><span>EMAILS SUBMITTED</span><strong id="emails">—</strong><small>Sessions with an email</small></article>
+</section>
+<div id="error" class="error" role="alert" hidden><span id="error-message"></span><button id="retry">Try again</button></div>
+<section class="sessions" aria-labelledby="sessions-title"><div class="table-heading"><div><h2 id="sessions-title">Player sessions</h2><p>Newest first <span>·</span> All times UTC</p></div><span class="readonly">READ ONLY</span></div>
+<div class="toolbar"><div class="filters" role="group" aria-label="Filter sessions by status"><button data-filter="ALL" aria-pressed="true">All</button><button data-filter="PLAYING" aria-pressed="false">Playing</button><button data-filter="WIN" aria-pressed="false">Winners</button><button data-filter="LOSE" aria-pressed="false">Losers</button></div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" maxlength="254" autocomplete="off" placeholder="Search session ID or email" aria-label="Search session ID or email"></label></div>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Session table, scroll horizontally for all columns"><table><thead><tr><th scope="col">SESSION ID</th><th scope="col">EMAIL</th><th scope="col">STATUS</th><th scope="col">STARTED AT</th><th scope="col">FINISHED AT</th><th scope="col">REMAINING SECONDS</th><th scope="col">LAST SEEN AT</th></tr></thead><tbody id="rows"><tr><td colspan="7" class="empty"><span class="empty-icon">◷</span><strong>Loading sessions</strong><span>Retrieving the latest activity…</span></td></tr></tbody></table></div>
+<div class="table-footer"><span id="range" aria-live="polite">Waiting for data</span><div class="pagination"><button id="previous" aria-label="Previous page" disabled>←</button><span id="page-label">Page 1</span><button id="next" aria-label="Next page" disabled>→</button></div></div></section>
+<footer class="footnote"><span>Players are counted as sessions. Playing filters include inactive sessions.</span><span>Auto-refresh every 10 seconds</span></footer>
+</main></body></html>
